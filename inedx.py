@@ -14,5 +14,3 @@ def index():
     text = bs4.BeautifulSoup(a.text,"html.parser")
     time = text.find("div",class_="smaller09 grey center")
     return time.text.replace("更新時間：","近期上映電影已爬蟲及存檔完畢，網站最近更新日期為：")
-
-app.run(debug=True)
